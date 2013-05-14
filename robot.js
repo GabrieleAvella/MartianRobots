@@ -115,7 +115,7 @@ function Robot( surfDimX, surfDimY, startCoord, startOrient )
         {
             //If the robot is out of the grid,
             //checks the "scent" of the previous robots
-            if( lostRobotPos.indexOf( newCoord.toString() ) == -1 )
+            if( lostRobotPos.indexOf( newCoord.toString() ) === -1 )
             {
                 //No scent, robot lost
                 lostRobotPos.push( newCoord.toString() );
@@ -195,7 +195,7 @@ function start()
 {
     //Parse the inputs
     var firstInput = document.getElementById( "robcoord" ).value; //Robot coordinate
-    if( firstInput == "" )
+    if( firstInput === "" )
     {
         alert( "Set robot coordinate" );
         return;
@@ -218,7 +218,7 @@ function start()
     }
 
     var secondInput = document.getElementById( "robstartpos" ).value;   //Robot position and orientation
-    if( secondInput == "" )
+    if( secondInput === "" )
     {
         alert( "Set robot start position" );
         return;
@@ -240,7 +240,7 @@ function start()
     }
 
     var thirdInput = document.getElementById( "robcommands" ).value;    //Commands
-    if( thirdInput == "" )
+    if( thirdInput === "" )
     {
         alert( "Set robot commands" );
         return;
